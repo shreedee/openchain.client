@@ -18,7 +18,7 @@ namespace OpenChain.Client.ConsoleTest
 
         public async Task Run()
         {
-            var ocs = new OpenChainServer("http://localhost:8080/");
+            var ocs = new OpenChainServer("http://localhost:63154/");
 
             string assetPath;
 
@@ -27,7 +27,7 @@ namespace OpenChain.Client.ConsoleTest
             using (var b = ocs.Login(bob))
             {
                 var ir = await ocs.GetData<LedgerInfo>("/", "info");
-                if (ir.Value == null || ir.Value.Name != "My Ledger")
+                //if (ir.Value == null || ir.Value.Name != "My Ledger")
                 {
                     ir.Value = new LedgerInfo { Name = "My Ledger" };
                     await ad.SetData(ir);

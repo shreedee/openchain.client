@@ -49,9 +49,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NBitcoin.flu.2.1.5-flu\lib\net45\NBitcoin.BouncyCastle.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Users\Frédéric\Documents\GitHubVisualStudio\NBitcoin\NBitcoin\bin\Release\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Openchain.Abstractions, Version=0.4.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Openchain.Abstractions.0.4.4\lib\net451\Openchain.Abstractions.dll</HintPath>
@@ -83,6 +83,7 @@
     <Compile Include="Models\UserInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
